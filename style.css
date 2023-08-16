@@ -1,0 +1,90 @@
+:root {
+  --bg: #01090e;
+  --prim: #160330;
+  --sec: #0e21f1;
+  --text: #cfe9fc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--bg);
+  color: var(--text);
+  @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Inter:wght@300&display=swap");
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-bar {
+  padding-top: 1%;
+  padding-bottom: 4%;
+  font-size: 1.2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+#form {
+  padding: 2% 2%;
+  max-width: 15vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  border-radius: 10px;
+  background-color: var(--sec);
+  width: 8vw;
+  cursor: pointer;
+  height: 4vh;
+  border: none;
+}
+
+.book-name, .book-author {
+  border: none;
+  max-width: 100%;
+  height: 3vh;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--prim);
+}
+
+.grid-container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 30ch);
+  gap: 1rem;
+}
+
+.grid-items {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--prim);
+  text-align: center;
+  height: 30vh;
+  border: none;
+  border-radius: 20px;
+  padding: 2ch 2ch;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+.grid-items * {
+  background-color: var(--prim);
+}
+
+.submit, .close-form {
+  margin-top: 5%;
+}
+
+.deleteItems, .readItems {
+  background-color: var(--sec);
+  margin-bottom: 2%;
+}/*# sourceMappingURL=style.css.map */
